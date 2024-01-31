@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Array - is an object. collection of variables
+
+        var names = ["Rifajul", "Rifaj", "Islam", "Md"];
+        console.log(names);
+        console.log(names[0]);
+        console.log(names.length);
+        names.push("ha ha ");
+        console.log(names);
+        console.log(names.length);
+        names.pop();
+        console.log(names);
+
+
+
+        var country_1 = ["Bangladesh", "Nepal"];
+        var country_2 = ["Pakistan", "Bhutan"];
+
+        var country = country_1.concat(country_2);
+
+        console.log(country);
+        console.log(country[0]);
+        console.log(country[1]);
+        console.log(country[2]);
+
+
+        // loop in array
+
+        var num = new Array; // all prompt input will store here
+        var sum = 0;
+
+        for (var i = 0; i <5; i+=1){
+
+            num[i] = parseInt(prompt("Enter a number : "));
+
+            document.write(num[i] + "<br>");
+
+            sum = sum + num[i];
+        }
+
+        document.write("Sum is = " + sum);
+
+
+        // push, pop, concat, shift (opposite of push ), unshift (opposite of pop), splice, slice, sort, reverse
+
+
+        // string sorting
+
+        var names = ["Mansur","Samsur","Amged","Mosto","Safur", "Gafur", "Abul"];
+
+        names.sort();
+        // names.reverse(); for reverse sorting
+
+        console.log(names);
+
+
+
+        // number sorting
+
+        var numbers = [10, 50, 90, 13, 40, 33, 77, 4];
+
+        numbers.sort(function (a, b){
+            return a-b;
+            // return b-a;  for reverse sorting
+        })
+
+        console.log(numbers);
+        
+    </script>
+</body>
+
+</html>

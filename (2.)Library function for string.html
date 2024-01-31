@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission JavaScript</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+
+    <script>
+        var text = prompt('Enter your name:');
+
+        document.write("Your Name's total Number of character is: " + text.length + "<br>");
+        document.write("Your Name's Second character is: " + text.charAt(1) + "<br>"); // it count's the number from 0,1,2
+        document.write("Your Name's Uppercase is: " + text.toUpperCase() + "<br>");
+        document.write("Your Name's Lowercase is: " + text.toLowerCase() + "<br>");
+
+
+
+
+        document.write("<br> <br> <br> <br>");
+
+
+
+        // concatenate
+        var text1 = "Bangladesh ";
+        var text2 = "is a beautiful country";
+
+        var text = text1.concat(text2);
+        document.write(text);
+
+        //or,
+
+        // var text1 = "Bangladesh ";
+        // var text2 = "is a beautiful country";
+
+        // var text = text1 + text2;
+        // document.write(text);
+
+
+        document.write("<br> <br> <br> <br>");
+
+
+        // slice
+        var text5 = "Bangladesh ";
+
+        var text6 = text5.slice(0,6);
+        document.write(text6);
+
+        
+    </script>
+</body>
+
+</html>

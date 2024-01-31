@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission JavaScript</title>
+</head>
+
+<body>
+    <script>
+        //(1). convert data type from number to string
+        var num = 25; //number data type
+        num = toString(num)
+
+        console.log(typeof (num));
+
+
+
+        //(2). convert data type from string to number 
+        console.log(typeof (Number("123")));
+
+
+        //(first)  convert data type from string to number (parseInt) "parseInt = purno shonkha"
+        var string = "50"; //string data type
+        string = parseInt(string);
+
+        console.log(typeof (string));
+
+        //(second)  convert data type from string to number (parseFloat) "parseFloat = doshomik shonkha"
+        var string_1 = "75"; //string data type
+        string_1 = parseFloat(string_1);
+
+        console.log(typeof (string_1));
+
+
+
+
+        // (3). toFixed  "toFixed = count number after the '.'(dot) "
+        //first
+        var number_1 = 125.56;
+        number_1 = number_1.toFixed(); // first it convert the doshomik shonkha to purno shonkha
+
+        console.log(number_1)
+
+        //second
+        var number_2 = 125.56;
+        number_2 = number_2.toFixed(1); // second it count the number after '.' (dot)
+
+        console.log(number_2)
+
+
+
+
+        // (4). toPrecision  "toPrecision = count total number from the first"
+        //first
+        var number_3 = 575.56368;
+        number_3 = number_3.toPrecision(); // first it count the toal number like as it is
+
+        console.log(number_3)
+
+        //second
+        var number_4 = 575.56368;
+        number_4 = number_4.toPrecision(5); // second it count the number from first
+
+        console.log(number_4)
+    </script>
+
+</body>
+
+</html>

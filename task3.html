@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 03</title>
+</head>
+<body>
+
+    <script>
+        var numb1 = prompt("Enter your First Number: ");
+        var numb2 = prompt("Enter your Second Number: ");
+
+        numb1 = parseInt(numb1, 10);
+        numb2 = parseInt(numb2, 10);
+
+        var sum, sub, into, divided, modulas;
+
+        sum = numb1 + numb2;
+        sub = numb1 - numb2;
+        into = numb1 * numb2;
+        divided = numb1 / numb2;
+        modulas = numb1 % numb2;
+
+        document.write(numb1 + " + " + numb2 + " = " + sum + "<br>");
+        document.write(numb1 + " - " + numb2 + " = " + sub + "<br>");
+        document.write(numb1 + " * " + numb2 + " = " + into + "<br>");
+        document.write(numb1 + " / " + numb2 + " = " + divided + "<br>");
+        document.write(numb1 + " % " + numb2 + " = " + modulas);
+    </script>
+</body>
+</html>

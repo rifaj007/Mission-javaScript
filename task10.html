@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // create a function called highestRunScorer that will 
+        // Receive a 2d array called playersInfo
+        // Based on highest score, return the name of the player
+
+        function highestScore(scores) {
+
+           var max = scoresList[0];
+
+           for(var i=1; i < scores.length; i++){
+            if (max < scores[i]){
+                max = scores[i];
+            }
+           }
+
+           return max;
+
+        }
+
+        scoresList = [10, 58, 34, 75, 98, 65, 20, 90 ];
+
+        var result = highestScore(scoresList);
+
+        console.log("Highest score is = " + result);
+
+
+
+
+    </script>
+</body>
+
+</html>

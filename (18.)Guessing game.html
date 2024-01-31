@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+</head>
+
+<body>
+
+
+    <script>
+
+        var totalWin = 0;
+        var totalLost = 0;
+        var wrongDigit = 0;
+
+        for (var x = 0; x < 5; x++) {
+            var guessingNumber = parseInt(prompt("Enter a number between 1 to 5 :"));
+
+            var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+            if (guessingNumber > 5 || guessingNumber <= 0) {
+                console.log("Invalid Digit");
+                wrongDigit++
+            } 
+
+            else if (guessingNumber == randomNumber) {
+                console.log("Ohh! You guess right.");
+                totalWin++
+            }
+
+             else {
+                console.log("Wrong! The number is : " + randomNumber);
+                totalLost++
+            }
+        }
+
+        document.write("Total Win : " + totalWin + "<br> <br>");
+        document.write("Total Lost : " + totalLost + "<br> <br>");
+        document.write("Total Invalid Digit input : " + wrongDigit)
+
+        
+    </script>
+</body>
+
+</html>

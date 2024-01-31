@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+</head>
+
+<body>
+    <div class="my-div">
+        <h1>This is heading 1</h1>
+        <h1>This is heading 2</h1>
+    </div>
+
+
+    <script>
+        // DOM - Document object Module
+
+
+        // adding h1 in the serial 3 (it will add in the last)
+        var heading_3 = document.createElement("h1");
+        heading_3.appendChild(document.createTextNode("This is heading h3"));
+
+        document.querySelector(".my-div").appendChild(heading_3);
+
+
+        // removing h1 in the serial 2
+        var heading_2 = document.getElementsByTagName("h1")[1];
+
+        var myDiv = document.querySelector(".my-div")
+        myDiv.removeChild(heading_2);
+
+
+        // adding h1 in the top
+        var heading_0 = document.createElement("h1");
+        heading_0.appendChild(document.createTextNode("This is added top text"));
+
+        var myDiv = document.querySelector(".my-div")
+
+        var heading_1 = document.getElementsByTagName("h1")[0];
+        myDiv.insertBefore(heading_0, heading_1 /* before of which?*/ );
+    </script>
+</body>
+
+</html>

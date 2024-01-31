@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Slider</title>
+
+</head>
+
+<body>
+
+    <button onclick="prev()">Previous</button>
+    <img src="images/services-slider-1.jpg" alt="" width="300" height="300">
+    <button onclick="next()">Next</button>
+
+
+
+    <script>
+        var photoStorage = [
+            "images/services-slider-1.jpg",
+            "images/services-slider-2.jpg",
+            "images/services-slider-3.jpg",
+            "images/services-slider-4.jpg",
+        ];
+
+        var imgTag = document.querySelector("img");
+        var count = 0;
+
+        function prev() {
+            count--;
+
+            if (count < 0) {
+                count = photoStorage.length - 1;
+                imgTag.src = photoStorage[count];
+            }
+
+            imgTag.src = photoStorage[count];
+        };
+
+        function next() {
+            count++;
+
+            if (count >= photoStorage.length) {
+                count = 0;
+                imgTag.src = photoStorage[count];
+
+            }
+
+            imgTag.src = photoStorage[count];
+        };
+    </script>
+</body>
+
+</html>

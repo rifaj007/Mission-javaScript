@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+</head>
+
+<body>
+
+    <button>Click me, bro</button>
+
+
+
+    <script>
+
+        var selectedObject = document.querySelector("button");
+        selectedObject.addEventListener("click", function(){
+
+            selectedObject.classList.add("is-active");
+        })
+
+    </script>
+</body>
+
+</html>
